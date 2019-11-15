@@ -7,9 +7,14 @@ ruby '2.6.3'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
-gem 'rest-client', '~> 1.8'
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'rest-client', '~> 2.0'
 
+# handles the user upload of images
+gem 'carrierwave', '~> 1.2'
+
+# required gems for image upload
+gem 'dotenv-rails', groups: [:development, :test]
+gem "cloudinary", "1.10.1.pre.rc"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -56,8 +61,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  # gem 'spring'
+  # gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 
