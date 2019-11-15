@@ -1,0 +1,9 @@
+<h1>Hello my dudes</h1>
+<% @cocktails.each do |cocktail| %>
+  <ul>
+    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></>
+    (<small><%= link_to 'delete', cocktail_path(cocktail), method: :delete, data: { confirm: 'Are you sure?' } %></small>)
+  </ul>
+<% end %>
+
+<%= link_to 'Add a new cocktail', new_cocktail_path, class: 'btn btn-outline-secondary btn-sm' %>
