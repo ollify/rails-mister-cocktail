@@ -10,7 +10,7 @@ gem 'simple_form'
 gem 'rest-client', '~> 2.0'
 
 # handles the user upload of images
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 1.3'
 
 # required gems for image upload
 gem 'dotenv-rails', groups: [:development, :test]
